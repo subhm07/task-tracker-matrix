@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Task Tracker - Futuristic Matrix Interface</title>
+    <title>AI Agent Progress Tracker - Futuristic Matrix Interface</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,38 +13,48 @@
     <!-- Main Content -->
     <div class="container">
         <header>
-            <h1>AI Task Tracker</h1>
-            <p class="subtitle">Your Daily Progress Companion</p>
+            <h1>AI Agent Progress Tracker</h1>
+            <p class="subtitle">Tracking my journey building AI agents for daily task accomplishment</p>
         </header>
         
         <main>
-            <!-- Task Input -->
-            <div class="input-section">
-                <input type="text" id="taskInput" placeholder="Enter your daily task...">
-                <button id="addTaskBtn">Add Task</button>
-            </div>
+            <section class="tutorials">
+                <h2>Tutorials</h2>
+                <div class="tutorial-grid">
+                    <a href="tutorials/memory/index.html" class="tutorial-card">
+                        <h3>Hermes Memory System</h3>
+                        <p>Learn how to use Hermes' advanced memory features including soul.md, Obsidian integration, and email connections</p>
+                    </a>
+                    <a href="tutorials/background/index.html" class="tutorial-card">
+                        <h3>Background Tasks & Dreams</h3>
+                        <p>Run Hermes in the background, set up cron jobs, and let your AI dream about your goals</p>
+                    </a>
+                    <a href="tutorials/goals/index.html" class="tutorial-card">
+                        <h3>Goals & Super Goals</h3>
+                        <p>Use the goal feature to persistently work on objectives with human-AI handshakes</p>
+                    </a>
+                    <a href="tutorials/models/index.html" class="tutorial-card">
+                        <h3>Model Switching & Delegation</h3>
+                        <p>Switch between models, delegate tasks to specialized models, and use anti-gravity CLI</p>
+                    </a>
+                </div>
+            </section>
             
-            <!-- Tasks List -->
-            <div class="tasks-section">
-                <h2>Today's Tasks</h2>
-                <ul id="tasksList"></ul>
-            </div>
-            
-            <!-- Progress Display -->
-            <div class="progress-section">
+            <section class="progress">
+                <h2>Today's Progress</h2>
                 <div class="progress-circle">
-                    <div class="progress-value" id="progressValue">0%</div>
+                    <div class="progress-value" id="progressValue">65%</div>
                     <svg class="progress-ring" width="120" height="120">
                         <circle class="progress-ring__background" cx="60" cy="60" r="50"/>
                         <circle class="progress-ring__indicator" cx="60" cy="60" r="50"/>
                     </svg>
                 </div>
                 <p id="progressText">Tasks completed today</p>
-            </div>
+            </section>
         </main>
         
         <footer>
-            <p>Built with • Hermes Agent • Nemotron-3-Super</p>
+            <p>Built with • Hermes Agent • Nemotron-3-Super • <span id="date"></span></p>
         </footer>
     </div>
     

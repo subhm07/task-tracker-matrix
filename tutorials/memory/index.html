@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Memory System - AI Agent Progress Tracker</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .tutorial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .tutorial-section {
+            margin-bottom: 2rem;
+        }
+        .tutorial-section h3 {
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+            margin-bottom: 0.5rem;
+        }
+        .tutorial-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .asset-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .asset-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: rgba(0, 255, 0, 0.2);
+            box-shadow: 0 0 10px #0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix"></canvas>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Hermes Memory System</h1>
+            <p class="subtitle">Unlock the full potential of Hermes' memory capabilities</p>
+        </header>
+        
+        <main>
+            <div class="tutorial-content">
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+                
+                <h2>Understanding Hermes Memory</h2>
+                <p>Hermes' memory system is what sets it apart from other AI assistants. It's not just a simple chat history; it's a sophisticated system that allows the AI to remember and recall information across sessions, making it truly personalized and powerful.</p>
+                
+                <div class="tutorial-section">
+                    <h3>1. The Memory Engine</h3>
+                    <p>At the core of Hermes is a memory engine that stores information in a structured way. It uses a combination of techniques to ensure that important information is retained while less important details fade away.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>2. Memory Markdown (.memory.md)</h3>
+                    <p>The primary storage for Hermes' memory is a markdown file located at <code>~/.hermes/memory.md</code>. This file contains all the facts, preferences, and contextual information that Hermes has learned about you.</p>
+                    <p>You can view and edit this file directly to add or modify information. However, it's recommended to use Hermes' built-in memory commands to ensure proper formatting.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>3. Peer Cards</h3>
+                    <p>For each person you interact with, Hermes creates a "peer card" that stores information about that individual, including their communication style, preferences, and past interactions. This allows Hermes to tailor its responses when communicating with or about specific people.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>4. Fuzzy Index and Prompt Cache</h3>
+                    <p>Hermes uses a fuzzy index to quickly retrieve relevant memories based on semantic similarity, not just exact keyword matches. Additionally, a 1-hour prompt cache helps reduce token usage by storing recent context.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>5. Adding Your Soul (soul.md)</h3>
+                    <p>One of the most powerful features is the ability to create a <code>soul.md</code> file. This file acts as a context manual for your life, telling Hermes who you are, where you live, your goals, preferences, and how you want it to behave.</p>
+                    <p>By providing this information, Hermes can better understand your context and provide more personalized assistance.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>6. Connecting External Systems</h3>
+                    <p>Hermes can connect to various external systems to enhance its memory:</p>
+                    <ul>
+                        <li><strong>Obsidian:</strong> Link your Hermes memory to your Obsidian vault for seamless knowledge sharing.</li>
+                        <li><strong>Email:</strong> Connect to your email (via services like Zapier) to allow Hermes to recall and act on email content.</li>
+                        <li><strong>Meeting Notetakers:</strong> Integrate with tools like Granola, Fireflies, or Fathom to recall meeting discussions.</li>
+                    </ul>
+                </div>
+                
+                <div class="asset-container">
+                    <h3>Memory System Visualization</h3>
+                    <img src="assets/memory_typing.gif" alt="Hermes Memory Typing Animation">
+                    <p><em>Typing animation demonstrating memory recall</em></p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>7. Practical Tips for Enhancing Memory</h3>
+                    <ul>
+                        <li>Regularly review and update your <code>soul.md</code> file.</li>
+                        <li>Use specific, detailed prompts when teaching Hermes new information.</li>
+                        <li>Leverage the peer card system by mentioning people's names in conversations.</li>
+                        <li>Connect external systems gradually to avoid overwhelming the memory system.</li>
+                        <li>Use the <code>hermes memory</code> commands to manage your memory directly.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with • Hermes Agent • Nemotron-3-Super • <span id="date"></span></p>
+        </footer>
+    </div>
+    
+    <script src="../../script.js"></script>
+</body>
+</html>
