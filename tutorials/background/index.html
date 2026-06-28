@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Tasks & Dreams - AI Agent Progress Tracker</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .tutorial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .tutorial-section {
+            margin-bottom: 2rem;
+        }
+        .tutorial-section h3 {
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+            margin-bottom: 0.5rem;
+        }
+        .tutorial-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .asset-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .asset-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: rgba(0, 255, 0, 0.2);
+            box-shadow: 0 0 10px #0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix"></canvas>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h1>Background Tasks & Dreams</h1>
+            <p class="subtitle">Run Hermes in the background, set up cron jobs, and let your AI dream about your goals</p>
+        </header>
+        
+        <main>
+            <div class="tutorial-content">
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+                
+                <h2>Running Hermes in the Background</h2>
+                <p>One of the most powerful features of Hermes is its ability to run tasks in the background without interrupting your current conversation. This allows you to have multiple thought processes running simultaneously.</p>
+                
+                <div class="tutorial-section">
+                    <h3>1. Background Tasks with Slash Commands</h3>
+                    <p>You can start a background task by using the <code>/background</code> command followed by your request. This tells Hermes to process the request in the background while you continue with your current conversation.</p>
+                    <p>Example: <code>/background Research the latest advancements in quantum computing</code></p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>2. Setting Up Cron Jobs</h3>
+                    <p>Hermes allows you to schedule recurring tasks using its cron job functionality. This is perfect for daily briefings, reminders, or periodic data collection.</p>
+                    <p>Example: Set up a daily morning brief at 8:00 AM that includes weather, motivational quotes, and your schedule.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>3. The Dreaming Feature</h3>
+                    <p>Perhaps one of the most fascinating features is Hermes' ability to "dream" about your goals and projects. During scheduled downtime (like early morning), Hermes can analyze all your conversations, goals, and data to provide insights and recommendations.</p>
+                    <p>Example: At 6:00 AM, Hermes reviews your goals, recent conversations, and projects to generate three actionable recommendations for the day plus one non-negotiable task.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>4. Practical Applications</h3>
+                    <ul>
+                        <li><strong>Research:</strong> Have Hermes research a topic in the background while you work on other tasks.</li>
+                        <li><strong>Content Creation:</strong> Let Hermes outline articles, write scripts, or brainstorm ideas while you focus on execution.</li>
+                        <li><strong>Planning:</strong> Use background tasks to develop project plans, itineraries, or strategies.</li>
+                        <li><strong>Learning:</strong> Have Hermes explain complex concepts in the background while you do other work.</li>
+                    </ul>
+                </div>
+                
+                <div class="asset-container">
+                    <h3>Background Task Visualization</h3>
+                    <img src="assets/background_typing.gif" alt="Hermes Background Task Animation">
+                    <p><em>Typing animation demonstrating background task processing</em></p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>5. Best Practices</h3>
+                    <ul>
+                        <li>Use background tasks for time-consuming operations that don't require immediate feedback.</li>
+                        <li>Set clear, specific goals for your background tasks.</li>
+                        <li>Combine background tasks with cron jobs for automated recurring processes.</li>
+                        <li>Use the dreaming feature to get unexpected insights and connections.</li>
+                        <li>Monitor your background tasks to ensure they're completing successfully.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with • Hermes Agent • Nemotron-3-Super • <span id="date"></span></p>
+        </footer>
+    </div>
+    
+    <script src="../../script.js"></script>
+</body>
+</html>

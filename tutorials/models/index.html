@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Switching & Delegation - AI Agent Progress Tracker</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .tutorial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .tutorial-section {
+            margin-bottom: 2rem;
+        }
+        .tutorial-section h3 {
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+            margin-bottom: 0.5rem;
+        }
+        .tutorial-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .asset-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .asset-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: rgba(0, 255, 0, 0.2);
+            box-shadow: 0 0 10px #0f0;
+        }
+        .model-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .model-table th, .model-table td {
+            border: 1px solid #0f0;
+            padding: 0.5rem;
+            text-align: left;
+            color: #0f0;
+        }
+        .model-table th {
+            background: rgba(0, 255, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix"></canvas>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <div class="tutorial-content">
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+                
+                <h2>Model Switching & Delegation</h2>
+                <p>Learn how to switch between different AI models and delegate tasks to specialized models for optimal performance.</p>
+                
+                <div class="tutorial-section">
+                    <h3>1. Model Switching</h3>
+                    <p>Hermes allows you to switch between different AI models on the fly, depending on the task at hand. You can use the <code>/model</code> command to see available models and switch to the one best suited for your current task.</p>
+                    <p>For example:</p>
+                    <ul>
+                        <li>Use Opus 4.7 for writing and creative tasks</li>
+                        <li>Use Grok for real-time data and social media analysis</li>
+                        <li>Use specialized models for coding, math, or reasoning tasks</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>2. Delegation to Specialized Models</h3>
+                    <p>Beyond just switching models, you can delegate specific tasks to different models. This is particularly useful for complex workflows where different steps require different strengths.</p>
+                    <p>Example workflow:</p>
+                    <ul>
+                        <li>Use a research model to gather information</li>
+                        <li>Use a writing model to draft an article</li>
+                        <li>Use a coding model to implement a solution</li>
+                        <li>Use a review model to proofread and improve</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>3. Anti-Gravity CLI (Gemini Alternative)</h3>
+                    <p>With the deprecation of the Gemini CLI, Hermes now supports the anti-gravity CLI, which provides access to Gemini models for multimodal tasks like image and video analysis.</p>
+                    <p>You can use the anti-gravity CLI within Hermes to:</p>
+                    <ul>
+                        <li>Analyze images and videos</li>
+                        <li>Process multimodal inputs</li>
+                        <li>Leverage Gemini's advanced reasoning capabilities</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>4. Practical Applications</h3>
+                    <ul>
+                        <li><strong>Content Creation:</strong> Use different models for research, writing, editing, and optimization.</li>
+                        <li><strong>Problem Solving:</strong> Delegate different aspects of a problem to models specialized in math, logic, or creativity.</li>
+                        <li><strong>Learning:</strong> Use models that excel at explanation for learning new concepts.</li>
+                        <li><strong>Development:</strong> Use coding models for development tasks and other models for documentation or design.</li>
+                    </ul>
+                </div>
+                
+                <div class="asset-container">
+                    <h3>Model Switching Visualization</h3>
+                    <img src="assets/models_typing.gif" alt="Hermes Model Switching Typing Animation">
+                    <p><em>Typing animation demonstrating model switching process</em></p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>5. Best Practices</h3>
+                    <ul>
+                        <li>Match the model to the task: use the right tool for the job.</li>
+                        <li>Experiment with different models to find what works best for each type of task.</li>
+                        <li>Consider token costs and response times when selecting models.</li>
+                        <li>Use delegation to break down complex tasks into manageable steps.</li>
+                        <li>Stay updated on new models and capabilities as they become available.</li>
+                    </ul>
+                </div>
+                
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with • Hermes Agent • Nemotron-3-Super • <span id="date"></span></p>
+        </footer>
+    </div>
+    
+    <script src="../../script.js"></script>
+</body>
+</html>

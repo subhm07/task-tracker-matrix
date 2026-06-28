@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals & Super Goals - AI Agent Progress Tracker</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .tutorial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .tutorial-section {
+            margin-bottom: 2rem;
+        }
+        .tutorial-section h3 {
+            color: #0f0;
+            text-shadow: 0 0 5px #0f0;
+            margin-bottom: 0.5rem;
+        }
+        .tutorial-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .asset-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .asset-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #0f0;
+            box-shadow: 0 0 10px #0f0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0f0;
+            text-decoration: none;
+            border: 1px solid #0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background: rgba(0, 255, 0, 0.2);
+            box-shadow: 0 0 10px #0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrix"></canvas>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <div class="tutorial-content">
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+                
+                <h2>Goals & Super Goals</h2>
+                <p>Learn how to use Hermes' goal feature to persistently work on objectives with human-AI handshakes.</p>
+                
+                <div class="tutorial-section">
+                    <h3>1. Understanding the Goal Feature</h3>
+                    <p>The goal feature in Hermes allows you to set a task that the AI will persistently work on until it's completed. It's like having a dedicated assistant that doesn't forget your objective.</p>
+                    <p>You can set a goal by using the <code>/goal</code> command followed by your objective.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>2. How Goals Work</h3>
+                    <p>When you set a goal, Hermes will keep it in mind for the next time in the conversation. It will work towards achieving that goal by breaking it down into steps and prompting you for input when needed.</p>
+                    <p>Goals are designed to last for a certain number of messages (by default 20) but can be extended or reset.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>3. Super Goals: The Human-AI Handshake</h3>
+                    <p>While regular goals are powerful, sometimes you need a more sophisticated approach for complex objectives. This is where &quot;Super Goals&quot; come in.</p>
+                    <p>A Super Goal is a system that breaks down a large goal into smaller, actionable steps and assigns each step to either you or the AI. This creates a true partnership where both human and AI contribute their strengths.</p>
+                    <p>For example, if your goal is to launch an online course, a Super Goal might break it down into:</p>
+                    <ul>
+                        <li>Define course outline (AI)</li>
+                        <li>Create slide deck (You)</li>
+                        <li>Record videos (You)</li>
+                        <li>Set up payment processing (AI)</li>
+                        <li>Write sales copy (AI)</li>
+                        <li>Launch marketing campaign (You)</li>
+                    </ul>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>4. Setting Up a Super Goal</h3>
+                    <p>To use the Super Goal system, you can either:</p>
+                    <ul>
+                        <li>Use a pre-built Super Goal skill (if available)</li>
+                        <li>Create your own by detailing the steps and assigning responsibilities</li>
+                    </ul>
+                    <p>The key is to be specific about what needs to be done and who (AI or human) will do each part.</p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>5. Practical Applications</h3>
+                    <ul>
+                        <li><strong>Learning:</strong> Master a new skill with a structured plan.</li>
+                        <li><strong>Projects:</strong> Break down a large project into manageable tasks.</li>
+                        <li><strong>Goals:</strong> Achieve personal or professional objectives with AI assistance.</li>
+                        <li><strong>Content Creation:</strong> Plan and produce content with clear division of labor.</li>
+                    </ul>
+                </div>
+                
+                <div class="asset-container">
+                    <h3>Goals Feature Visualization</h3>
+                    <img src="assets/goals_typing.gif" alt="Hermes Goals Typing Animation">
+                    <p><em>Typing animation demonstrating goal setting process</em></p>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>6. Best Practices</h3>
+                    <ul>
+                        <li>Make your goals specific and measurable.</li>
+                        <li>Break large goals into smaller, achievable steps.</li>
+                        <li>Regularly review and adjust your goals based on progress.</li>
+                        <li>Use the Super Goal approach for complex objectives that require both AI and human input.</li>
+                        <li>Celebrate milestones to maintain motivation.</li>
+                    </ul>
+                </div>
+                
+                <a href="../../index.html" class="back-link">← Back to Tutorials</a>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with • Hermes Agent • Nemotron-3-Super • <span id="date"></span></p>
+        </footer>
+    </div>
+    
+    <script src="../../script.js"></script>
+</body>
+</html>
